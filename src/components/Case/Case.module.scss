@@ -1,0 +1,45 @@
+@import "../../other/styles.scss";
+.case {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+    &:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    & * {
+        cursor: pointer;
+    }
+    .caseText {
+        font-size: 20px;
+    }
+    .sphere {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid $bodyColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 85%;
+            height: 85%;
+        }
+    }
+}
+.completed {
+    .caseText {
+        opacity: 30%;
+        text-decoration: line-through;
+    }
+}
+.hidden {
+    display: none;
+}
